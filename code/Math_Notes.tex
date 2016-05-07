@@ -1,0 +1,90 @@
+% Math_Notes.tex
+% Chase P. Ross, 5/7/2016
+%
+% Compiles math notes from different classes
+
+\documentclass{article}
+\usepackage[fleqn]{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{nicefrac}% use \nicefrac[]{2}{3}  instead of \frac{2}{3} in matrices
+\usepackage{graphicx}
+\usepackage{float}
+
+\theoremstyle{definition}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{definition}{Definition}
+\newtheorem*{prop}{Proposition}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{example}{Example}
+\newtheorem*{remark}{Remark}
+\newtheorem*{summary}{Summary}
+
+\usepackage{graphicx}
+\usepackage{enumerate}
+
+% set the input directory here
+%\DeclareGraphicsExtensions{.eps}
+%\usepackage[outdir=../img/]{epstopdf}
+\graphicspath{{../img/}}
+
+
+\def\B{{\mathbb B}}
+\def\C{{\mathbb C}}
+\def\D{{\mathbb D}}
+\def\H{{\mathbb H}}
+\def\M{{\mathbb M}}
+\def\N{{\mathbb N}}
+\def\0{{\mathbb 0}}
+\def\P{{{\mathbb P}}}
+\def\Q{{\mathbb Q}}
+\def\R{{\mathbb R}}
+\def\T{{\mathbb T}}
+\def\Z{{\mathbb Z}}
+
+%add an option to left/right/center align matrix entries
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+ \hskip -\arraycolsep
+ \let\@ifnextchar\new@ifnextchar
+ \array{#1}}
+\makeatother
+
+%make chapter/section/subsection font smaller
+\usepackage{sectsty}
+\sectionfont{\fontsize{12}{12}\selectfont}
+\chapterfont{\fontsize{12}{14}\selectfont}
+\subsectionfont{\fontsize{12}{12}\selectfont}
+
+%change bullet lists from large dot to dash
+\def\labelitemi{--}
+
+% add hyperreferences
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\begin{document}
+\title{Lorem Ipsum}
+\date{\today}
+\author{Chase P. Ross \\ Yale School of Management}
+\maketitle
+\tableofcontents
+\newpage
+
+%\chapter{Real Analysis}
+\label{sec:real-analysis}
+\input{./analysis.tex}
+
+%\newpage
+%\chapter{Linear Algebra}
+\label{sec:linear-algebra}
+\input{./linearalgebra.tex}
+
+\end{document}

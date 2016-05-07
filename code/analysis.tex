@@ -1,0 +1,30 @@
+\section{Sets}
+
+\begin{definition}
+\textbf{Set}. Any well specified collection of elements. It may contain a finite or infinite number of elements.
+\end{definition}
+
+\begin{example}
+$\sqrt{2}$ is irrational (cannot be written as a fraction). That is, $\sqrt{2} \neq \frac{a}{b}, a,b \in \mathbb{N}$.
+\end{example}
+
+\begin{proof}
+We use proof by contradiction.
+\begin{enumerate}
+\item Suppose not. Suppose we can write $\sqrt{2}=\frac{a}{b}$ where $a,b \in \mathbb{Z}$ (integers).
+\item We can assume either $a$ or $b$ is not divisible by 2, because otherwise you could simplify further until one of the two numbers is not divisible by 2.
+\item Notice if $n = \lbrace 1,2,3,4,5... \rbrace$ then $n^2 = \lbrace 1,4,9,16,25... \rbrace$. So $a$ must be even because only even numbers squared result in even numbers, which $2b^2$ must be.
+\item From (2), we know that $b$ must be odd, because if either $a$ or $b$ is not divisible by 2 \textit{and} $a$ must be even, then $b$ must be odd.
+\item Since $a$ is even, we can say $a=2m$.
+\item Then $2b^2=(2m)^2 \rightarrow 2b^2=4m^2 \rightarrow b^2=2m^2$.
+\item $b$ must be an even number because $2m^2$ must be an even number, and so $b$ must also be an even number which contradicts (2) because both $b$ and $a$ cannot be even. Therefore there is a contradiction.
+\end{enumerate}
+\end{proof}
+
+\begin{example}
+All numbers are definable in under 11 words.
+\end{example}
+
+\begin{proof}
+Suppose not. Then there exists some number that cannot be defined in under 11 words. $n$ = \textit{smallest number not definable with less than 11 words.}
+\end{proof}

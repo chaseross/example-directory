@@ -1,0 +1,11 @@
+\BOOKMARK [1][-]{section.1}{Sets}{}% 1
+\BOOKMARK [1][-]{section.2}{Symmetric Matrices}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Prove eigenvalues of a real symmetric matrix are real.}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Prove eigenvectors of a real symmetric matrix corresponding to district eigenvalues are orthogonal to each other.}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Prove a real symmetric matrix is always diagonizable.}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Positive Definite Matrices}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Positive Definite Tests}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Similar Matrices}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Facts about similar matrices}{section.4}% 9
+\BOOKMARK [1][-]{section.5}{Markov Matrices}{}% 10
+\BOOKMARK [1][-]{section.6}{What About Non-Diagonizable Matrices? Jordan Blocks}{}% 11
